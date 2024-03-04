@@ -1,7 +1,7 @@
 package models
 
 type AnalysisResult struct {
-	Name string
+	Name       string
 	Conclusion string
-	Data []byte
+	Data       []byte
 }

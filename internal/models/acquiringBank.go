@@ -3,7 +3,10 @@ package models
 import "payment/pkg/models"
 
 type AcquiringBank struct {
-	// properties
+	Name        string
+	Description string
+	SwiftCode	string
+	Amount      float64
 }
 
 func (b *AcquiringBank) ValidateCard(cardNum string) error {

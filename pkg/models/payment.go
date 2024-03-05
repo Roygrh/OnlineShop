@@ -1,7 +1,14 @@
 package models
 
 type Payment struct {
-	Name        string
-	Description string
+	ID          string
 	Amount      float64
+	Currency    string
+	CardNumber  string
+	ExpiryMonth int
+	ExpiryYear  int
+	CVV         string
+	Status      string
+	MerchantID  string
+	Timestamp   time.Time
 }

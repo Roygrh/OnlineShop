@@ -1,8 +1,8 @@
-package models
+package services
 
 import "payment/pkg/models"
 
-type AcquiringBank struct {
+type PaymentPlatform struct {
 	Name        string
 	Description string
 	SwiftCode	string

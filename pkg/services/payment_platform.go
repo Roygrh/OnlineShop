@@ -6,15 +6,15 @@ import "payment/internal/models"
 type PaymentPlatform struct {
 	Name        string
 	Description string
-	SwiftCode	string
+	SwiftCode   string
 	Amount      float64
-	db 			*models.database
+	db          *models.database
 }
 
 func NewPaymentPlatform(db *models.database) PaymentPlatform {
-    return &PaymentPlatform{
-        db: db,
-    }
+	return &PaymentPlatform{
+		db: db,
+	}
 }
 
 func (b *PaymentPlatform) ValidateCard(cardNum string) error {
